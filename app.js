@@ -21,7 +21,7 @@ app.use(logger("dev"));
 
 // ROUTES
 // Start defining your routes here:
-app.get("/home", (request, response, next) => {
+app.get("/", (request, response, next) => {
   console.log(request);
   response.sendFile(__dirname + "/views/home.html");
 });
